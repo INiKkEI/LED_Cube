@@ -2,7 +2,7 @@
 ![Release](https://img.shields.io/github/v/release/INiKkEI/LED_Cube)
 
 # 8×8×8 LED Cube
-![Hero](./media/hero.jpg)
+![Hero](./media/hero.png)
 
 ## Process
 - [SRS](./docs/SRS.md)
