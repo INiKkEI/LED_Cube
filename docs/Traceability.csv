@@ -1,0 +1,15 @@
+ReqID,TestID,Method,Status,EvidenceLink
+SYS-F1,ST-SYS-001,Video (60 fps) visual check,future,docs/verification/Reports.md#ST-SYS-001
+SYS-F2,ST-SYS-002,Step-test video + monotonicity notes,future,docs/verification/Reports.md#ST-SYS-002
+SYS-F3,ST-SYS-003,Firmware build + linker map review,future,docs/verification/Reports.md#ST-SYS-003
+SYS-F4,ST-IFC-004,Phone screen+cube video roundtrip,future,docs/verification/Reports.md#ST-IFC-004
+SYS-F5,ST-IFC-005,Command matrix checklist + video,future,docs/verification/Reports.md#ST-IFC-005
+SYS-F6,ST-TOOLS-006,Phone convert+stream E2E video,future,docs/verification/Reports.md#ST-TOOLS-006
+SYS-N1,ST-PWR-101,Multimeter in-series current test,future,docs/verification/Reports.md#ST-PWR-101
+SYS-N2,ST-REL-102,2 h run log + thermometer readings,future,docs/verification/Reports.md#ST-REL-102
+SYS-N3,ST-SCM-103,BOM review with alternates links,future,docs/verification/Reports.md#ST-SCM-103
+HW-1,ST-HW-201,Walking-1 pattern observation,future,docs/verification/Reports.md#ST-HW-201
+HW-2,ST-HW-202,SOA calc + thermometer spot-check,future,docs/verification/Reports.md#ST-HW-202
+HW-3,ST-HW-203,PSU current delta estimate,future,docs/verification/Reports.md#ST-HW-203
+HW-4,ST-HW-204,Decoupling/bulk photo audit,future,docs/verification/Reports.md#ST-HW-204
+HW-5,ST-HW-205,Protection photo or exception note,future,docs/verification/Reports.md#ST-HW-205
