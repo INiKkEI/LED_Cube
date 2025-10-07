@@ -1,3 +1,5 @@
+![Docs PDF](https://github.com/INiKkEI/LED_Cube/actions/workflows/docs-pdf.yml/badge.svg)
+
 # 8x8x8 LED Cube
 
 ## Process
@@ -26,3 +28,4 @@
 - All test issues: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Atest+milestone%3AG4
 - Reports: [docs/verification/Reports.md](./docs/verification/Reports.md)
 - Evidence: [/docs/verification/data](./docs/verification/data)
+
