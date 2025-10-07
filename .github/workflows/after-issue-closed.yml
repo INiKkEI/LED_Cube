@@ -1,0 +1,25 @@
+name: After issue closed
+on:
+  issues:
+    types: [closed]
+jobs:
+  checklist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const body = [
+              "### Post-close checklist (steps 5–9)",
+              "- [ ] Update **Traceability.csv** `Status=pass` and `EvidenceLink` anchor",
+              "- [ ] Add/append **docs/verification/Reports.md** section for this test/req",
+              "- [ ] Save videos/photos/logs under **docs/verification/data/**",
+              "- [ ] Update **Risks.csv** if affected",
+              "- [ ] Move cards on the FW Sprint board / roll over leftovers"
+            ].join("\n");
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body
+            })

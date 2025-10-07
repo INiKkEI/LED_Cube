@@ -1,0 +1,24 @@
+name: After PR merged
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const issueRefs = (context.payload.pull_request.body || "").match(/#\d+/g) || [];
+            for (const ref of issueRefs) {
+              const num = Number(ref.slice(1));
+              try {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: num,
+                  body: "PR merged. Run the post-close checklist (steps 5–9)."
+                });
+              } catch {}
+            }
