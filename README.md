@@ -1,6 +1,5 @@
 ![Docs PDF](https://github.com/INiKkEI/LED_Cube/actions/workflows/docs-pdf.yml/badge.svg)
 ![Release](https://img.shields.io/github/v/release/INiKkEI/LED_Cube)
-![License](https://img.shields.io/github/license/INiKkEI/LED_Cube)
 
 # 8×8×8 LED Cube
 ![Hero](./media/hero.jpg)
