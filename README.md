@@ -5,11 +5,11 @@
 ![Hero](./media/hero.png)
 
 ## Process
-- [SRS](./docs/SRS.md)
-- [Traceability](./docs/Traceability.csv)
-- [Verification Plan](./docs/VerificationPlan.md)
-- [Gate Checklists](./docs/Gate-Checklists.md)
-- [Risk Register](./docs/Risks.csv)
+- [SRS](./docs/srs/SRS.md)
+- [Traceability](./docs/traceablity/Matrix.csv)
+- [Verification Plan](./docs/verification/Plan.md)
+- [Gate Checklists](./docs/governance/Gates.md)
+- [Risk Register](./docs/risks/Risks.csv)
 
 ## Project tracking
 
