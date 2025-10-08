@@ -12,12 +12,12 @@ flowchart LR
   mcu --> FW
   cmd --> anim --> fb
 
-  fb --> drv["LED Drivers / Shift Regs"]
-  drv --> sinks["Low-side Sinks<br/>ULN2803A or MOSFETs"]
-  sinks --> cube["LED Cube Array<br/>(N×N×N)"]
+  fb --> drv["Shift Regs"]
+  drv --> sinks["MOSFETs"]
+  sinks --> cube["LED Cube Array<br/>(8×8×8)"]
 
   subgraph PWR[Power 5 V / 3 A]
-    jack["Input Jack / USB-C"]
+    jack["Input Jack"]
     bulk["Bulk + Decoupling Caps"]
   end
   jack --> bulk --> mcu
