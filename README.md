@@ -26,7 +26,7 @@
 - Non-functional: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Anon-functional+label%3Areq
 
 ## Verification (G4)
-- All test issues: https://github.com/INiKkEI/LED_Cube/milestone/2
+- Verfication Plan: [docs/verification/Plan.md](./docs/verification/Plan.md)
 - Reports: [docs/verification/Reports.md](./docs/verification/Reports.md)
 - Evidence: [/docs/verification/data](./docs/verification/data)
 
