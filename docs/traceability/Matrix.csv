@@ -9,7 +9,12 @@ SYS-N1,ST-PWR-101,Multimeter in-series current test,future,docs/verification/Rep
 SYS-N2,ST-REL-102,2 h run log + thermometer readings,future,docs/verification/Reports.md#ST-REL-102
 SYS-N3,ST-SCM-103,BOM review with alternates links,future,docs/verification/Reports.md#ST-SCM-103
 HW-1,ST-HW-201,Walking-1 pattern observation,future,docs/verification/Reports.md#ST-HW-201
-HW-2,ST-HW-202,SOA calc + thermometer spot-check,future,docs/verification/Reports.md#ST-HW-202
+HW-2,ST-HW-202,N-MOS sizing + temp spot-check,future,docs/verification/Reports.md#st-hw-202
+HW-2,ST-PCB-305,Thermal/copper width rationale for N-MOS returns,future,docs/verification/Reports.md#st-pcb-305
 HW-3,ST-HW-203,PSU current delta estimate,future,docs/verification/Reports.md#ST-HW-203
 HW-4,ST-HW-204,Decoupling/bulk photo audit,future,docs/verification/Reports.md#ST-HW-204
 HW-5,ST-HW-205,Protection photo or exception note,future,docs/verification/Reports.md#ST-HW-205
+HW-6,ST-PCB-301,KiCad ERC report,future,docs/verification/Reports.md#st-pcb-301
+HW-6,ST-PCB-302,KiCad DRC report,future,docs/verification/Reports.md#st-pcb-302
+HW-7,ST-PCB-304,Test pad presence & continuity,future,docs/verification/Reports.md#st-pcb-304
+HW-8,ST-PCB-303,Fabrication package review,future,docs/verification/Reports.md#st-pcb-303

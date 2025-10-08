@@ -5,11 +5,11 @@
 ![Hero](./media/hero.png)
 
 ## Process
-- [SRS](./docs/SRS.md)
-- [Traceability](./docs/Traceability.csv)
-- [Verification Plan](./docs/VerificationPlan.md)
-- [Gate Checklists](./docs/Gate-Checklists.md)
-- [Risk Register](./docs/Risks.csv)
+- [SRS](./docs/srs/SRS.md)
+- [Traceability](./docs/traceability/Matrix.csv)
+- [Verification Plan](./docs/verification/Plan.md)
+- [Gate Checklists](./docs/governance/Gates.md)
+- [Risk Register](./docs/risks/Risks.csv)
 
 ## Project tracking
 
@@ -24,10 +24,9 @@
 - Firmware reqs: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Afirmware+label%3Areq
 - Interface reqs: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Ainterface+label%3Areq
 - Non-functional: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Anon-functional+label%3Areq
-- Tests (G4): https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Atest+milestone%3AG4
 
 ## Verification (G4)
-- All test issues: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Atest+milestone%3AG4
+- Verfication Plan: [docs/verification/Plan.md](./docs/verification/Plan.md)
 - Reports: [docs/verification/Reports.md](./docs/verification/Reports.md)
-- Evidence: [/docs/verification/data](./docs/verification/data)
+- Evidence: [/docs/verification/data](./docs/verification/Data)
 

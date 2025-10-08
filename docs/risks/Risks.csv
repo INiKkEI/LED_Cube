@@ -1,10 +1,10 @@
 ID,Risk,Cause,Severity(1-5),Likelihood(1-5),RPN,Mitigation,State
 R1,Input current exceeds 3.0 A,Full-white at max brightness and high I_LED,5,3,15,Limit global brightness; set column resistors for 10-15 mA; validate with meter,open
-R2,Ghosting/bleed visible,Insufficient OE blanking and parasitics,4,3,12,Add blanking in ISR; tighten layer timing; per-IC decoupling; star returns,open
-R3,>70 C on switches/regulator,High layer current and poor thermal path,4,3,12,Size devices with margin; add copper area; cap max brightness; 2 h temp log,open
+R2,Ghosting/bleed visible,Insufficient OE blanking and parasitics,4,3,12,OE blanking + P-MOS turn-off speed tuning.,open
+R3,>70 °C on N-MOSFETs/regulator,High layer current and poor thermal path,4,3,12,Size devices with margin; add copper area; cap max brightness; 2 h temp log,open
 R4,BLE link unstable/slow,RF interference or poor flow control,3,3,9,Use short packets + acks; sequence numbers; retry/back-pressure;,open
 R5,Flash not enough for presets,Frames too large for MCU flash,3,2,6,Use parametric patterns or RLE/compression; store >= 5 presets totaling >=16 kB,open
-R6,Column/layer miswiring,Mix-ups during soldering/assembly,4,2,8,Run walking-1 test per plane; label harness; KiCad ERC/DRC review,open
+R6,Column/layer miswiring,Mix-ups during soldering/assembly,4,2,8,Run walking-1 test; label harness; KiCad ERC/DRC review; confirm 64+8 chain order,open
 R7,MCU resets from ripple,High di/dt from multiplexing,4,2,8,Bulk cap at entry; 0.1 microF per IC + 1 microF per 2-4 ICs; short,open
 R8,Damage from reverse/short input,Miswire or hot-plug event,5,2,10,Fit 3.5-4 A polyfuse + reverse protection OR document keyed connector exception,open
 R9,LED grid misalignment,Hand-built cube without strict jig,3,3,9,Printed jig; go/no-go gauge; verify each plane before stacking,open

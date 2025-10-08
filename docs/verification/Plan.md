@@ -36,14 +36,26 @@ Verify animation, PWM, BLE control, reliability, power, and layout by visual tes
 ### Hardware
 - **ST-HW-201 ↔ HW-1 — Column chain check**
   - Run walking-1 pattern per column. Confirm all 64 columns in order on each layer. Note any missing/swapped.
-- **ST-HW-202 ↔ HW-2 — High-side sizing sanity**
-  - Compute worst-case layer current = 64 × I_LED × duty. Full-white test; thermometer spot. Pass: < 70 °C case; no visible sag.
-- **ST-HW-203 ↔ HW-3 — Current limit estimate**
-  - Measure PSU current delta between “all off” and “single voxel on”. Pass: ≈ 10–15 mA target.
+- **ST-HW-202 ↔ HW-2 — High-side N-MOS sizing**
+  Compute worst-case sink current = 64 × I_LED × duty. Full-white test; spot-check MOSFET case temperature. Pass: calc documented; Tcase < 70 °C.
+- **ST-HW-203 ↔ HW-3 — Column current limit (N-MOS sinks)**
+  Light a single voxel; estimate I_LED from PSU current delta. Cross-check R value: R ≈ (5 V − V_F(LED) − I_LED·R_DS(on)) / I_LED. Pass: measurement.txt + resistor calc.
 - **ST-HW-204 ↔ HW-4 — Decoupling/bulk audit**
   - Checklist + photos: 0.1 µF per IC; 1 µF per 2–4 ICs; bulk at input. Pass: placements present and near pins.
 - **ST-HW-205 ↔ HW-5 — Input protection**
   - If fitted: photo + part ratings. If omitted: exception note with connector/handling controls. Pass: one of the two recorded.
+
+  ### PCB checks
+- **ST-PCB-301 ↔ HW-6 — ERC clean**
+  KiCad ERC with zero errors; intentional warnings documented. Pass: ERC report PDF and screenshot.
+- **ST-PCB-302 ↔ HW-6 — DRC clean per rules**
+  Set rules per docs/PCB.md; run DRC; zero errors. Pass: DRC report PDF and screenshot.
+- **ST-PCB-303 ↔ HW-8 — Fab package completeness**
+  Generate Gerbers, drill, IPC-356, PDFs, BoM, PnP; open in a Gerber viewer to spot check. Pass: Zip list + viewer screenshots.
+- **ST-PCB-304 ↔ HW-7 — Test pads present**
+  Mark and photograph all required pads; continuity check to nets. Pass: Board photos and annotated image.
+- **ST-PCB-305 ↔ HW-2/HW-4 — Copper and gate control sanity**
+  Document ground return widths from layer N-MOSFETs to input ground; show current density rationale.
 
 ## 4. Evidence
 Store videos, photos, logs under `docs/verification/data/`. Summaries in `docs/verification/Reports.md` with anchors per TestID.
