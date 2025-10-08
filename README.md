@@ -14,7 +14,7 @@
 ## Project tracking
 
 **Milestones**
-- G1 (Requirements freeze): https://github.com/INiKkEI/LED_Cube/milestone/1
+- G2 (Desgn freeze): https://github.com/INiKkEI/LED_Cube/milestone/1
 - G4 (Verification passed): https://github.com/INiKkEI/LED_Cube/milestone/2
 
 **Quick filters**
