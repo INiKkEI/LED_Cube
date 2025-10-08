@@ -28,5 +28,5 @@
 ## Verification (G4)
 - Verfication Plan: [docs/verification/Plan.md](./docs/verification/Plan.md)
 - Reports: [docs/verification/Reports.md](./docs/verification/Reports.md)
-- Evidence: [/docs/verification/data](./docs/verification/data)
+- Evidence: [/docs/verification/data](./docs/verification/Data)
 
