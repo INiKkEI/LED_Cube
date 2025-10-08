@@ -6,7 +6,7 @@
 
 ## Process
 - [SRS](./docs/srs/SRS.md)
-- [Traceability](./docs/traceablity/Matrix.csv)
+- [Traceability](./docs/traceability/Matrix.csv)
 - [Verification Plan](./docs/verification/Plan.md)
 - [Gate Checklists](./docs/governance/Gates.md)
 - [Risk Register](./docs/risks/Risks.csv)
