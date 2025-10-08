@@ -24,10 +24,9 @@
 - Firmware reqs: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Afirmware+label%3Areq
 - Interface reqs: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Ainterface+label%3Areq
 - Non-functional: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Anon-functional+label%3Areq
-- Tests (G4): https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Atest+milestone%3AG4
 
 ## Verification (G4)
-- All test issues: https://github.com/INiKkEI/LED_Cube/issues?q=is%3Aissue+label%3Atest+milestone%3AG4
+- All test issues: https://github.com/INiKkEI/LED_Cube/milestone/2
 - Reports: [docs/verification/Reports.md](./docs/verification/Reports.md)
 - Evidence: [/docs/verification/data](./docs/verification/data)
 
